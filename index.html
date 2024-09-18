@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .training-section {
+            background-image: url(/img/bg\ img.jpg);
+            width: 1150px;
+            margin: auto;
+            border: 2px solid rgb(255, 255, 255);
+            padding-bottom: 50px
+        }
+
+        .training-section .img-logo {
+            text-align: center;
+        }
+
+        .training-section .img-logo img {
+
+            height: 129px;
+            border-radius: 66px;
+        }
+
+        .training-section h1 {
+            text-align: center;
+            /* width: 100%; */
+        }
+
+        .img-container {
+            margin-top: 70px;
+            justify-content: space-around;
+            display: flex;
+            /* flex-direction: column; */
+            overflow: hidden;
+            flex-wrap: wrap;
+            /* flex-basis: 20%; */
+        }
+
+        .cards {
+            text-align: center;
+            box-shadow: 0px 0px 10px 2px rgb(251, 246, 246);
+            background-color: rgba(255, 255, 255, 0.869);
+            flex-basis: 23%;
+            margin: 10px 0px;
+            /* margin: 1112px; */
+            border-radius: 24px;
+            padding: 32px 0px;
+            transition: transform 0.5s ease
+        }
+
+        .cards:hover {
+            background-color: #f58181;
+            color: white;
+            transform: translatey(-20px);
+        }
+
+        .cards img {
+            padding: 12px 0px;
+            border-radius: 26px;
+            height: 100px;
+
+        }
+
+        .cards p {
+            font-size: 14px;
+            padding: 15px 10px;
+
+        }
+
+        .cards button {
+            border-radius: 12px;
+            border: none;
+            background-color: #d94b4b;
+            color: white;
+            padding: 7px 9px;
+        }
+
+        h3 {
+            padding: 10px 0px;
+        }
+
+        .img-logo {
+            margin: 56px 214px 60px 214px;
+            border-radius: 24px;
+            padding: 17px 9px 8px 19px;
+            background-color: #c6bcbc;
+        }
+
+        .caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .caption #cap-img {
+            height: 50px;
+        }
+
+        .separation {
+            height: 7px;
+            /* border: 2px solid; */
+            border-radius: 12px;
+            background-color: grey;
+            width: 400px;
+            margin: auto;
+        }
+
+        /* media queries   */
+
+        @media only screen and (min-width: 200px) and (max-width: 767px) {
+            .training-section {
+                width: 100%;
+            }
+
+            .img-container {
+                flex-direction: column;
+            }
+
+            .cards {
+                margin: 21px 17px 0px 17px;
+                flex-direction: column;
+            }
+            .img-logo{
+                margin: 73px;
+    border-radius: 29px;
+    padding: 17px 9px 8px 19px;
+    background-color: #c6bcbc;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="training-section">
+
+        <div class="img-logo">
+            <img src="/img/sha logo.jpeg" alt="">
+            <div class="caption">
+                <h4>shahid shaikh</h4>
+                <img id="cap-img" src="/img/cs img.png" alt="">
+            </div>
+        </div>
+        <div class="separation"></div>
+        <h1>Our Training Courses</h1>
+        <div class="img-container">
+            <div class="cards">
+                <img class="img" src="/img/php.jpeg" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/python logo.jpeg" alt="">
+                <h3>python web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/c logo.jpeg" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/java logo.webp" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/js logo.jpeg" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/node logo.png" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/react logo.png" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/img/sql logo.png" alt="">
+                <h3>PHP web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cupiditate nostrum nobis nam molestiae
+                    exercitationem id debitis adipisci. Illo aperiam velit possimus officia fugiat voluptas nam omnis.
+                    Unde, aspernatur debitis.</p>
+                <button>Read More</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
